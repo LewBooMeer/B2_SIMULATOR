@@ -112,9 +112,10 @@ h2 {
 #selected-paragraphs p {
   background-color: #f5fdff;
   padding: 20px;
-  border-left: 5px solid lightblue;
+  border-right: 5px solid lightblue;
+
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 10px 0 10px rgba(0, 0, 0.1, 0.1);
   transition: box-shadow 0.3s, transform 0.3s;
 }
 #selected-paragraphs p:hover {
