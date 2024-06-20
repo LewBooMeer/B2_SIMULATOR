@@ -1,59 +1,235 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    margin: 0;
-    padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #fafeff;
+  margin: 0;
+  padding: 0;
 }
-
 .container {
-    width: 80%;
-    margin: auto;
-    background-color: #ffffff;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    margin-top: 20px;
+  width: 80%;
+  margin: auto;
+  background-color: #ffffff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin-top: 20px;
 }
-
 section {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
+  border-color: rgb(41, 118, 211);
+  border-style: solid;
+  border-width: 2px;
+  box-shadow: 10px 10px 5px lightblue;
+  border: 2px solid lightblue;
+  border-radius: 8px;
+  padding: 5px;
+  background-color: #f5fdff;
 }
-
 .button-section {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
+  margin-bottom: 10px;
+  display: flex;
+  grid-gap: 20px;
+  background-color: #ffff;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+.button-section #button-text {
+  font-size: 17px;
+  margin-right: -10px;
+  margin-top: 9px;
+  color: #008cba;
+  font-weight: 750;
 }
 
+/* selecting button*/
 #action-button {
-    margin-right: 10px;
-    padding: 10px 20px;
-    font-size: 16px;
+  background-color: rgb(2, 158, 255);
+  color: white;
+  border: none;
+  height: 40px;
+  width: 74px;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+  margin-left: 0px;
+  margin-bottom: 0px;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease;
+}
+#action-button:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.3);
+}
+
+#action-button:active {
+  background-color: rgb(0, 0, 0); /* Change to yellow when button is pressed */
 }
 
 .stopwatch-section {
-    text-align: center;
+  text-align: center;
 }
-
 #countdown {
-    font-size: 48px;
-    margin-bottom: 20px;
+  font-size: 48px;
+  margin-bottom: 20px;
 }
-
 .stopwatch-buttons button {
-    margin: 5px;
-    padding: 10px 20px;
-    font-size: 16px;
+  background-color: #e0feff;
+  border-color: rgb(41, 118, 211);
+  border-style: solid;
+  border-width: 1px;
+  color: rgb(41, 118, 211);
+  height: 36px;
+  width: 62px;
+  border-radius: 2px;
+  cursor: pointer;
 }
-
-#selected-paragraphs {
-    margin-top: 20px;
+.stopwatch-buttons button:hover {
+  background-color: rgb(2, 158, 255);
+  color: white;
 }
-
 h1 {
-    text-align: center;
+  text-align: center;
+  color: #008cba;
+  text-shadow: lightblue 1px 0 10px;
+}
+h2 {
+  text-align: center;
+}
+#selected-paragraphs {
+  margin-bottom: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+#selected-paragraphs p {
+  background-color: #f5fdff;
+  padding: 20px;
+  border-left: 5px solid lightblue;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+#selected-paragraphs p:hover {
+  box-shadow: lightblue;
+  transform: translateY(-5px);
+}
+.select {
+  position: fixed; /* Fixed positioning */
+  top: 10px; /* Top margin */
+  right: 10px; /* Right margin */
+  display: flex;
+  width: auto; /* Auto width */
+  max-width: 100%; /* Maximum width */
+  height: 2em;
+  line-height: 2;
+  background: rgb(2, 158, 255);
+  overflow: hidden;
+  border-radius: 0.25em;
+  z-index: 1000; /* Ensure it stays above other elements */
+}
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  border: 0 !important;
+  background: rgb(2, 158, 255);
+  background-image: none;
+  flex: 1;
+  padding: 0 1em; /* Adjusted padding */
+  color: white;
+  cursor: pointer;
+}
+/* Remove IE arrow */
+select::-ms-expand {
+  display: none;
+}
+/* Arrow */
+.select::after {
+  content: "\25BC";
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0 1em;
+  background: rgb(2, 158, 255);
+  cursor: pointer;
+  pointer-events: none;
+  transition: 0.25s all ease;
+}
+/* Transition */
+.select:hover::after {
+  color: white;
+}
+.content {
+  padding: 20px;
+}
+p {
+  margin: 10px 0;
+}
+/* Media query for responsive behavior */
+@media (max-width: 768px) {
+  .select {
+    top: 5px; /* Adjust top margin for smaller screens */
+    right: 5px; /* Adjust right margin for smaller screens */
+  }
+  select {
+    padding: 0 0.5em; /* Adjusted padding for smaller screens */
+  }
 }
 
-h2 {
-    text-align: center;
+.navigation-button-section-page1 {
+  display: flex;
+  justify-content: flex-end;
+  margin: 1%;
+}
+.navigation-button-section {
+  display: flex;
+  justify-content: space-between;
+  margin: 1%;
+}
+
+.arrow-button {
+  position: relative;
+  background: #008cba;
+  color: white;
+  border: none;
+  padding: 10px 30px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  overflow: hidden; /* Ensure text does not overlap with arrow */
+}
+
+.arrow-button span {
+  display: block; /* Ensure full width of text */
+}
+
+.left-arrow::before,
+.right-arrow::before {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-color: white;
+  clip-path: polygon(100% 50%, 0 0, 0 100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.left-arrow::before {
+  left: 10px;
+  transform: rotate(-180deg);
+}
+
+.right-arrow::before {
+  right: 10px;
 }

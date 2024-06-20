@@ -6,9 +6,9 @@ document.addEventListener("DOMContentLoaded", function () {
   const actionButton = document.getElementById("action-button");
 
   const paragraphs = document.querySelectorAll("#paragraphs p");
-  const selectedParagraphsDiv = document.getElementById("selected-paragraphs");
+  const selectedParagraphDiv = document.getElementById("selected-paragraphs");
 
-  let countdownTime = 120;
+  let countdownTime = 180; 
   let interval;
 
   function updateCountdown() {
@@ -41,40 +41,29 @@ document.addEventListener("DOMContentLoaded", function () {
   function resetCountdown() {
     clearInterval(interval);
     interval = null;
-    countdownTime = 120;
+    countdownTime = 180;
     updateCountdown();
   }
 
-  function getRandomParagraphs() {
+  function getRandomParagraph() {
     const shuffled = Array.from(paragraphs).sort(function () {
       return 0.5 - Math.random();
     });
-    return shuffled.slice(0, 2);
+    return shuffled[0];
   }
 
-  function displayRandomParagraphs() {
-    selectedParagraphsDiv.innerHTML = ""; // Clear previous results
-    const randomParagraphs = getRandomParagraphs();
-    randomParagraphs.forEach((paragraph) => {
-      const paragraphClone = paragraph.cloneNode(true);
-      selectedParagraphsDiv.appendChild(paragraphClone);
-      // Add click event listener to hide other paragraphs
-      paragraphClone.addEventListener("click", () => {
-        const allParagraphs = selectedParagraphsDiv.querySelectorAll("p");
-        allParagraphs.forEach((p) => {
-          if (p !== paragraphClone) {
-            p.style.display = "none";
-          } else {
-            p.style.display = "block";
-          }
-        });
-      });
-    });
+  function displayRandomParagraph() {
+    selectedParagraphDiv.innerHTML = ""; // Clear previous result
+    const randomParagraph = getRandomParagraph();
+    const paragraphClone = randomParagraph.cloneNode(true);
+    selectedParagraphDiv.appendChild(paragraphClone);
   }
+
   startButton.addEventListener("click", startCountdown);
   stopButton.addEventListener("click", stopCountdown);
   resetButton.addEventListener("click", resetCountdown);
-  actionButton.addEventListener("click", displayRandomParagraphs);
+  actionButton.addEventListener("click", displayRandomParagraph);
+
   // Initialize countdown display
   updateCountdown();
 });

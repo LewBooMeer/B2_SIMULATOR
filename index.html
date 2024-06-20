@@ -3,14 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Basic Webpage with Stopwatch</title>
+    <title>BSK B2 Simulator</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <div class="navigation-button-section-page1">
+      <button
+        id="forward-button"
+        class="arrow-button right-arrow"
+        onclick="location.href='page2.html'"
+      >
+        <span>Teil 2</span>
+      </button>
+    </div>
     <div class="container">
+      <h1>Teil 1</h1>
+      <h2>Über ein Thema sprechen (ca. 2 Minuten pro TN)</h2>
+
       <section id="paragraphs">
-      <h1>B2 BSK Prüfung Simulator</h1>
-        <h2>Section with 8 Paragraphs</h2>
         <p>
           1. Beschreiben Sie einen Arbeitgeber, für den Sie gearbeitet haben
           oder arbeiten möchten (z.B. Branche, Produkte und Dienstleistungen,
@@ -34,7 +44,7 @@
         <p>
           5. Beschreiben Sie das Vorgehen bei der Arbeitssuche für ein Land
           Ihrer Wahl (z. B. Angebote finden, Erstkontakt, Bewerbungsunterlagen
-          oder -gespräch).
+          oder gespräch).
         </p>
         <p>
           6. Beschreiben Sie, worauf es bei einem Bewerbungsgespräch ankommt.
@@ -52,8 +62,12 @@
         </p>
       </section>
       <div class="button-section">
-        <button id="action-button">Click Me</button>
-        <p id="button-text">Button Description</p>
+        <button id="action-button">Drücken</button>
+        <p id="button-text">
+          Lassen Sie das System nach dem Zufallsprinzip 2 der 8 Themen
+          auswählen. Wählen Sie eines der beiden unten gezeigten Themen aus und
+          sprechen Sie ca. zwei Minuten darüber.
+        </p>
       </div>
       <div id="selected-paragraphs"></div>
       <div class="stopwatch-section">
