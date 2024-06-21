@@ -23,6 +23,8 @@ section {
   border-radius: 8px;
   padding: 25px;
   background-color: #f5fdff;
+  color: #4b4b4b;
+  font-size: 17px;
 }
 .button-section {
   flex-direction: column;
@@ -45,7 +47,7 @@ section {
   margin-right: 10px;
 }
 
-/* selecting button*/
+/* selecting ACTION button*/
 #action-button {
   background-color: rgb(61, 181, 255);
   color: white;
@@ -60,9 +62,13 @@ section {
   text-align: center;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: box-shadow 0.3s ease;
+  border-color: rgb(120, 162, 189);
+  border-style: solid;
+  border-width: 1px;
 }
 #action-button:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.3);
+  background-color: rgb(48, 140, 197);
 }
 
 #action-button:active {
@@ -71,10 +77,14 @@ section {
 
 .stopwatch-section {
   text-align: center;
+  color: #4b4b4b;
+  text-shadow: rgb(169, 199, 209) 1px 0 10px;
+  font-size: 14px;
 }
 #countdown {
   font-size: 48px;
   margin-bottom: 20px;
+  color: #4b4b4b;
 }
 .stopwatch-buttons button {
   background-color: #e0feff;
@@ -84,21 +94,47 @@ section {
   color: rgb(41, 118, 211);
   height: 36px;
   width: 62px;
-  border-radius: 2px;
+  border-radius: 6px;
   cursor: pointer;
+  margin: 3px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 .stopwatch-buttons button:hover {
   background-color: rgb(2, 158, 255);
   color: white;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.3);
 }
-h1 {
+
+.stopwatch-buttons button:active {
+  background-color: rgb(0, 0, 0);
+}
+
+.title {
   text-align: center;
   color: #008cba;
   text-shadow: lightblue 1px 0 10px;
+  font-size: 28px;
 }
-h2 {
+
+.sub-title {
   text-align: center;
+  color: #4b4b4b;
+  text-shadow: lightblue 1px 0 10px;
+  font-size: 22px;
 }
+h3 {
+  text-align: center;
+  color: #008cba;
+  text-shadow: lightblue 1px 0 10px;
+  font-size: 25px;
+}
+h4 {
+  text-align: center;
+  color: #4b4b4b;
+  font-size: 20px;
+  text-shadow: lightblue 1px 0 10px;
+}
+
 #selected-paragraphs {
   margin-bottom: 40px;
   display: grid;
@@ -108,6 +144,9 @@ h2 {
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  font-weight: bold;
+  font-size: large;
+  color: #4b4b4b;
 }
 #selected-paragraphs p {
   background-color: #f5fdff;
@@ -146,7 +185,7 @@ select {
   background: rgb(2, 158, 255);
   background-image: none;
   flex: 1;
-  padding: 0 1em; /* Adjusted padding */
+  padding: 0 1em;
   color: white;
   cursor: pointer;
 }
@@ -154,7 +193,7 @@ select {
 select::-ms-expand {
   display: none;
 }
-/* Arrow */
+
 .select::after {
   content: "\25BC";
   position: absolute;
@@ -166,7 +205,6 @@ select::-ms-expand {
   pointer-events: none;
   transition: 0.25s all ease;
 }
-/* Transition */
 .select:hover::after {
   color: white;
 }
@@ -176,7 +214,6 @@ select::-ms-expand {
 p {
   margin: 10px 0;
 }
-/* Media query */
 @media (max-width: 768px) {
   .select {
     top: 5px;
@@ -211,11 +248,12 @@ p {
   align-items: center;
   justify-content: center;
   border-radius: 10px;
-  overflow: hidden; /* Ensure text does not overlap with arrow */
+  overflow: hidden;
+  box-shadow: rgb(169, 199, 209) 1px 0 10px;
 }
 
 .arrow-button span {
-  display: block; /* Ensure full width of text */
+  display: block;
 }
 
 .left-arrow::before,
@@ -236,4 +274,12 @@ p {
 
 .right-arrow::before {
   right: 10px;
+}
+
+#back-button:hover {
+  background-color: rgb(0, 106, 142);
+}
+
+#forward-button:hover {
+  background-color: rgb(0, 106, 142);
 }
