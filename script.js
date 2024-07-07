@@ -53,12 +53,11 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   function displayRandomParagraphs() {
-    selectedParagraphsDiv.innerHTML = ""; // Clear previous results
+    selectedParagraphsDiv.innerHTML = ""; 
     const randomParagraphs = getRandomParagraphs();
     randomParagraphs.forEach((paragraph) => {
       const paragraphClone = paragraph.cloneNode(true);
       selectedParagraphsDiv.appendChild(paragraphClone);
-      // Add click event listener to hide other paragraphs
       paragraphClone.addEventListener("click", () => {
         const allParagraphs = selectedParagraphsDiv.querySelectorAll("p");
         allParagraphs.forEach((p) => {
@@ -75,6 +74,5 @@ document.addEventListener("DOMContentLoaded", function () {
   stopButton.addEventListener("click", stopCountdown);
   resetButton.addEventListener("click", resetCountdown);
   actionButton.addEventListener("click", displayRandomParagraphs);
-  // Initialize countdown display
   updateCountdown();
 });

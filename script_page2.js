@@ -5,11 +5,12 @@ document.addEventListener("DOMContentLoaded", function () {
   const resetButton = document.getElementById("reset");
   const actionButton = document.getElementById("action-button");
 
-  const paragraphs = document.querySelectorAll("#paragraphs p");
+  const paragraphs = Array.from(document.querySelectorAll("#paragraphs p"));
   const selectedParagraphDiv = document.getElementById("selected-paragraphs");
 
   let countdownTime = 180; 
   let interval;
+  let lastParagraph = null;
 
   function updateCountdown() {
     const minutes = Math.floor(countdownTime / 60);
@@ -46,14 +47,16 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   function getRandomParagraph() {
-    const shuffled = Array.from(paragraphs).sort(function () {
-      return 0.5 - Math.random();
-    });
-    return shuffled[0];
+    let randomParagraph;
+    do {
+      randomParagraph = paragraphs[Math.floor(Math.random() * paragraphs.length)];
+    } while (randomParagraph === lastParagraph);
+    lastParagraph = randomParagraph;
+    return randomParagraph;
   }
 
   function displayRandomParagraph() {
-    selectedParagraphDiv.innerHTML = ""; // Clear previous result
+    selectedParagraphDiv.innerHTML = ""; 
     const randomParagraph = getRandomParagraph();
     const paragraphClone = randomParagraph.cloneNode(true);
     selectedParagraphDiv.appendChild(paragraphClone);
@@ -64,6 +67,5 @@ document.addEventListener("DOMContentLoaded", function () {
   resetButton.addEventListener("click", resetCountdown);
   actionButton.addEventListener("click", displayRandomParagraph);
 
-  // Initialize countdown display
   updateCountdown();
 });
