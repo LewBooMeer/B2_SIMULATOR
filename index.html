@@ -3,85 +3,53 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BSK B2 Simulator</title>
-    <link rel="stylesheet" href="styles.css" />
+    <title>Prufung Simulator</title>
+    <link rel="stylesheet" href="index-styles.css" />
   </head>
   <body>
-    <div class="navigation-button-section-page1">
-      <button
-        id="forward-button"
-        class="arrow-button right-arrow"
-        onclick="location.href='page2.html'"
-      >
-        <span>Teil 2</span>
-      </button>
-    </div>
-    <h1 class="title">Deutsch-Test für den Beruf B2</h1>
-    <h2 class="sub-title">Mündliche Prüfung</h2>
     <div class="container">
-      <h3>Teil 1</h3>
-      <h4>Über ein Thema sprechen</h4>
-
-      <section id="paragraphs">
-        <p>
-          1. Beschreiben Sie einen Arbeitgeber, für den Sie gearbeitet haben
-          oder arbeiten möchten (z.B. Branche, Produkte und Dienstleistungen,
-          Abteilungen und ihre Aufgaben, Besonderheiten).
+      <section>
+        <h1 class="title">Prüfung Simulator</h1>
+        <p class="sub-title">
+          • Der Prüfungssimulator wurde entwickelt, um Schülerinnen und Schüler
+          zu unterstützen, die sich auf einen Deutsch-Sprachtest auf
+          verschiedenen Niveaus vorbereiten.
+          <br /><br />
+          • Lehrkräfte können ihn im Unterricht einsetzen, um Lernende zu
+          bewerten und eine authentische Prüfungssituation zu simulieren.
+          <br /><br />
+          • Er kann während realer Prüfungen verwendet werden und gewährleistet
+          eine digitalisierte und unvoreingenommene Zufallsauswahl von Themen.
         </p>
-        <p>
-          2. Beschreiben Sie, wie Sie sich ein gutes Arbeitsumfeld vorstellen
-          (z.B. Jobsicherheit, Lohn/Gehalt, Karrierechancen, Kommunikation in
-          der Firma, Beispiele aus Ihrer Berufserfahrung).
-        </p>
-        <p>
-          3. Beschreiben Sie Ereignisse und Erfahrungen, die Ihre Berufswahl
-          beeinflusst haben (z.B. Stationen, wichtige Personen, Motivation,
-          Folgen).
-        </p>
-        <p>
-          4. Beschreiben Sie eine Person aus Ihrem Umfeld, die für Sie ein
-          berufliches Vorbild ist (z.B. Beziehung zu dieser Person,
-          Eigenschaften, Einfluss auf Sie).
-        </p>
-        <p>
-          5. Beschreiben Sie das Vorgehen bei der Arbeitssuche für ein Land
-          Ihrer Wahl (z. B. Angebote finden, Erstkontakt, Bewerbungsunterlagen
-          oder gespräch).
-        </p>
-        <p>
-          6. Beschreiben Sie, worauf es bei einem Bewerbungsgespräch ankommt.
-          Sprechen Sie über ein Land Ihrer Wahl (z. B. Berufsfeld, Vorbereitung,
-          Kleidung, typische Fragen).
-        </p>
-        <p>
-          7. Beschreiben Sie ein Produkt/ eine Dienstleistung Ihrer Wahl (z. B.
-          Merkmale, Nutzen für Kunden, Vor- und Nachteile, Erfolg).
-        </p>
-        <p>
-          8. Sie möchten sich selbstständig machen. Beschreiben Sie Ihre
-          Geschäftsidee (z.B. welches Produkt/ welche Dienstleistung,
-          Besonderheiten, Zielgruppe).
-        </p>
-      </section>
-      <div class="button-section">
-        <p id="button-text">
-          Lassen Sie das System nach dem Zufallsprinzip 2 der 8 Themen
-          auswählen. Wählen Sie eines der beiden unten gezeigten Themen aus und
-          sprechen Sie ca. zwei Minuten darüber.
-        </p>
-        <button id="action-button">Drücken</button>
-      </div>
-      <div id="selected-paragraphs"></div>
-      <div class="stopwatch-section">
-        <h2>ca. 2 Minuten pro Teilnehmer</h2>
-        <div id="countdown">02:00</div>
-        <div class="stopwatch-buttons">
-          <button id="start">Start</button>
-          <button id="stop">Stop</button>
-          <button id="reset">Reset</button>
+        <div class="button-section">
+          <button
+            id="button-b1"
+            class="arrow-button"
+            style="background-color: #5b875c"
+            onclick="location.href='under-development.html'"
+          >
+            <span>B1 (in Entwicklung)</span>
+          </button>
+          <button
+            id="button-b2"
+            class="arrow-button"
+            style="background-color: #2196f3"
+            onclick="location.href='dtb-b2-Sprechen-teil-1.html'"
+          >
+            <span>BSK B2 Sprechen</span>
+          </button>
+          <button
+            id="button-c1"
+            class="arrow-button"
+            style="background-color: #9d3e3e"
+            onclick="location.href='under-development.html'"
+          >
+            <span>C1 (in Entwicklung)</span>
+          </button>
         </div>
-      </div>
+      </section>
     </div>
+
     <script src="script.js"></script>
   </body>
 </html>

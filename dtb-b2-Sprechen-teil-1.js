@@ -53,23 +53,14 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   function displayRandomParagraphs() {
-    selectedParagraphsDiv.innerHTML = ""; 
+    selectedParagraphsDiv.innerHTML = "";
     const randomParagraphs = getRandomParagraphs();
     randomParagraphs.forEach((paragraph) => {
       const paragraphClone = paragraph.cloneNode(true);
       selectedParagraphsDiv.appendChild(paragraphClone);
-      paragraphClone.addEventListener("click", () => {
-        const allParagraphs = selectedParagraphsDiv.querySelectorAll("p");
-        allParagraphs.forEach((p) => {
-          if (p !== paragraphClone) {
-            p.style.display = "none";
-          } else {
-            p.style.display = "block";
-          }
-        });
-      });
     });
   }
+
   startButton.addEventListener("click", startCountdown);
   stopButton.addEventListener("click", stopCountdown);
   resetButton.addEventListener("click", resetCountdown);
