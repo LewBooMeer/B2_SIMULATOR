@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BSK B1 Simulator - Page 3</title>
+    <link rel="stylesheet" href="dtb-b1.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Startseite</a></li>
+          <!--<li><a href="#">Contact</a></li>-->
+        </ul>
+      </nav>
+    </header>
+
+    <div class="navigation-button-section">
+      <button
+        id="back-button"
+        class="arrow-button left-arrow"
+        onclick="location.href='dtb-b1-Sprechen-teil-2.html'"
+      >
+        <span>Teil 2</span>
+      </button>
+      <button
+        id="forward-button"
+        class="arrow-button right-arrow"
+        onclick="location.href='index.html'"
+      >
+        <span>Beenden</span>
+      </button>
+    </div>
+    <h1 class="title">Deutsch-Test für den Beruf B1</h1>
+    <h2 class="sub-title">Mündliche Prüfung</h2>
+    <div class="container">
+      <h3>Teil 3</h3>
+      <h4>Gemeinsam etwas planen (ca. 5 Minuten)</h4>
+
+      <section class="description">
+        Im dritten Teil der Prüfung besteht die Aufgabe darin, gemeinsam etwas
+        zu planen. Dazu sollen die Teilnehmenden Ideen formulieren, Vorschläge
+        machen und auf die Vorschläge der Gesprächspartnerin oder des
+        Gesprächspartners reagieren. Die Stichpunkte auf dem Arbeitsblatt können
+        eine Hilfe sein. Wichtig ist, die Situation sprachlich zu bewältigen.
+        Eine inhaltliche Einigung auf einen gemeinsamen Plan ist nicht zwingend
+        erforderlich.
+      </section>
+
+      <section id="paragraphs" style="display: none">
+        <h1>B1 BSK - Mündliche Prüfung Teil 2</h1>
+        <h2>Situation</h2>
+
+        <p>
+          Situation: Sie arbeiten beide in einer Firma.
+          <br />
+          Sie möchten in Zukunft gemeinsam zur Arbeit fahren.
+          <br /><br />
+          Aufgabe: Sprechen Sie mit Ihrer Partnerin oder Ihrem Partner über die
+          Einzelheiten. Machen Sie Vorschläge und begründen Sie Ihre Vorschläge.
+          Gehen Sie auf die Ideen Ihrer Partnerin oder Ihres Partners ein.
+          Einigen Sie sich. Diese Stichpunkte helfen Ihnen:
+          <br /><br />
+          <span class="bullet-point">• Vorteile</span>
+          <span class="bullet-point">• Verkehrsmittel</span>
+          <span class="bullet-point">• Wann?</span>
+          <span class="bullet-point">• Treffpunkt</span>
+        </p>
+        <p>
+          Test
+          <br /><br />
+          <span class="bullet-point">• Test</span>
+          <span class="bullet-point">• Test</span>
+          <span class="bullet-point">• Test</span>
+          <span class="bullet-point">• Test</span>
+        </p>
+      </section>
+      <div class="button-section">
+        <p id="button-text">
+          Lassen Sie das System eine zufällige Situation auswählen.
+        </p>
+        <button id="action-button">Drücken</button>
+      </div>
+      <div id="selected-paragraphs"></div>
+      <div class="stopwatch-section">
+        <h2>ca. 5 Min. für beide Teilnehmer</h2>
+        <div id="countdown">05:00</div>
+        <div class="stopwatch-buttons">
+          <button id="start">Start</button>
+          <button id="stop">Stop</button>
+          <button id="reset">Reset</button>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer-content">
+        <p class="footer-text">© 2024 Prüfung Simulator</p>
+      </div>
+    </footer>
+
+    <script src="dtb-b1-Sprechen-teil-3.js"></script>
+  </body>
+</html>

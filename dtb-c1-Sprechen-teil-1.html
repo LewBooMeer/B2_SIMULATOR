@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BSK C1 Simulator</title>
+    <link rel="stylesheet" href="dtb-c1.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Startseite</a></li>
+          <!--<li><a href="#">Contact</a></li>-->
+        </ul>
+      </nav>
+    </header>
+
+    <div class="navigation-button-section-page1">
+      <button
+        id="forward-button"
+        class="arrow-button right-arrow"
+        onclick="location.href='dtb-c1-Sprechen-teil-2.html'"
+      >
+        <span>Teil 2</span>
+      </button>
+    </div>
+    <h1 class="title">Deutsch-Test für den Beruf C1</h1>
+    <h2 class="sub-title">Mündliche Prüfung</h2>
+    <div class="container">
+      <h3>Teil 1</h3>
+      <h4>Über ein Thema sprechen</h4>
+
+      <section id="paragraphs">
+        <p>
+          1. Beschreiben Sie eine berufliche Entscheidung, die große
+          Auswirkungen auf Ihren weiteren Lebensweg hatte (z.B. Situation und
+          Umstände, Gründe, Konsequenzen für Ihr Leben).
+        </p>
+        <p>
+          2. Berichten Sie über Ihre Berufs- oder Schulausbildung (z. B. Verlauf
+          der Ausbildung, inhaltliche Schwerpunkte, Stärken und Schwächen der
+          Ausbildung, Unterschiede zwischen Deutschland und einem Land Ihrer
+          Wahl).
+        </p>
+        <p>
+          3. Beschreiben Sie eine Dienstleistung Ihrer Wahl (z. B. Branche,
+          Zielgruppe, Besonderheiten, Vor- und Nachteile,
+          Preis-Leistungs-Verhältnis, mögliche Ausführungen).
+        </p>
+        <p>
+          4. Beschreiben Sie den Herstellungsprozess für ein Produkt Ihrer Wahl
+          (z.B. Ausgangsmaterial, Produktionsschritte und dafür benötigte
+          Werkzeuge/Maschinen, Anforderungen an Mitarbeiterinnen und
+          Mitarbeiter).
+        </p>
+        <p>
+          5. Beschreiben Sie, was eine gute Führungskraft ausmacht (z.B.
+          Eigenschaften, Soft Skills, Verhalten, persönliche Vorbilder).
+        </p>
+        <p>
+          6. Sie möchten sich selbstständig machen. Beschreiben Sie Ihre
+          Geschäftsidee (z.B. Ihre Erfahrungen mit dem Geschäftsfeld, Produkt
+          oder Dienstleistung, Zielgruppe, Marktsituation, Wettbewerber,
+          Finanzierung).
+        </p>
+        <p>
+          7. Beschreiben Sie, wie sich die berufliche Selbstständigkeit vom
+          Angestelltenverhältnis in einem Berufsfeld Ihrer Wahl unterscheidet
+          (z.B. Besonderheiten beider Varianten, Chancen und Möglichkeiten,
+          Herausforderungen und Risiken).
+        </p>
+        <p>
+          8. Stellen Sie für ein Unternehmen Ihrer Wahl dar, welche Faktoren
+          besonders zum Erfolg des Unternehmens beitragen (z.B.
+          Mitarbeitermotivation, Führungsstil, Qualität des Produktes,
+          Firmenimage, Kundenpflege).
+        </p>
+        <p>
+          9. Welche Faktoren sind für die Kundenbindung besonders wichtig?
+          Sprechen Sie auch über persönliche Erfahrungen mit einem Unternehmen
+          Ihrer Wahl (z.B. Qualität, Preis-Leistung, Attraktivität der Marke,
+          Kundenservice).
+        </p>
+        <p>
+          10. Stellen Sie eine App vor, die Sie im Beruf nutzen können oder die
+          Sie sich für den Beruf wünschen (z. B. Zielgruppe, Eigenschaften,
+          Nutzen, Besonderheiten).
+        </p>
+        <p>
+          11. Beschreiben Sie eine Werbekampagne, die Sie für besonders gelungen
+          halten (z.B. Firma, Werbespot, Poster oder Slogan, mögliche Gründe für
+          den Erfolg).
+        </p>
+        <p>
+          12. Beschreiben Sie, wie ein Unternehmen Ihrer Wahl die sozialen
+          Medien zu seinem Vorteil nutzt (z.B. Werbung, Aufmerksamkeit,
+          Kommunikation mit Kunden, Firmenimage).
+        </p>
+      </section>
+      <div class="button-section">
+        <p id="button-text">
+          Lassen Sie das System nach dem Zufallsprinzip 2 der 12 Themen
+          auswählen. Wählen Sie eines der beiden unten gezeigten Themen aus und
+          sprechen Sie ca. zwei Minuten darüber.
+        </p>
+        <button id="action-button">Drücken</button>
+      </div>
+      <div id="selected-paragraphs"></div>
+      <div class="stopwatch-section">
+        <h2>ca. 2 Minuten pro Teilnehmer</h2>
+        <div id="countdown">02:00</div>
+        <div class="stopwatch-buttons">
+          <button id="start">Start</button>
+          <button id="stop">Stop</button>
+          <button id="reset">Reset</button>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer-content">
+        <p class="footer-text">© 2024 Prüfung Simulator</p>
+      </div>
+    </footer>
+
+    <script src="dtb-c1-Sprechen-teil-1.js"></script>
+  </body>
+</html>

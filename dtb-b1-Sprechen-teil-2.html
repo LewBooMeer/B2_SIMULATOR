@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BSK B1 Simulator - Page 2</title>
+    <link rel="stylesheet" href="dtb-b1.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Startseite</a></li>
+          <!--<li><a href="#">Contact</a></li>-->
+        </ul>
+      </nav>
+    </header>
+
+    <div class="navigation-button-section">
+      <button
+        id="back-button"
+        class="arrow-button left-arrow"
+        onclick="location.href='dtb-b1-Sprechen-teil-1.html'"
+      >
+        <span>Teil 1</span>
+      </button>
+      <button
+        id="forward-button"
+        class="arrow-button right-arrow"
+        onclick="location.href='dtb-b1-Sprechen-teil-3.html'"
+      >
+        <span>Teil 3</span>
+      </button>
+    </div>
+    <h1 class="title">Deutsch-Test für den Beruf B1</h1>
+    <h2 class="sub-title">Mündliche Prüfung</h2>
+    <div class="container">
+      <h3>Teil 2</h3>
+      <h4>Mit Kolleginnen und Kollegen sprechen (ca. 3 Minuten)</h4>
+
+      <section class="description">
+        Im zweiten Teil der Prüfung stellen die Teilnehmenden sich gegenseitig
+        Fragen zu den Themen des Aufgabenblattes und beantworten diese. Es
+        werden jeweils ein arbeitsbezogenes sowie zwei allgemeine Themen
+        angeboten. Die Teilnehmenden können auch Fragen zu einem zusätzlichen
+        Thema formulieren. Diese sollten zur Situation „in der Pause“ passen.
+        Die Prüfenden zeigen kurz ein Beispiel eines Pausengesprächs.
+      </section>
+
+      <section id="paragraphs" style="display: none">
+        <h1>B1 BSK - Mündliche Prüfung Teil 2</h1>
+        <h2>Section with Paragraphs</h2>
+
+        <p class="aufgabe-image">
+        <img src="dtb-b1-Sprechen-teil-2 images/b1t21.jpg" alt="aufgabe">
+    </p>
+    <p class="aufgabe-image">
+        <img src="dtb-b1-Sprechen-teil-2 images/b1t22.jpg" alt="aufgabe">
+    </p>
+        
+      </section>
+      <div class="button-section">
+        <p id="button-text">
+          Lassen Sie das System ein zufälliges Aufgabenblatt auswählen.
+          <br /><br />Sprechen Sie mit Ihrer Gesprächspartnerin oder Ihrem
+          Gesprächspartner. Stellen Sie Fragen und antworten Sie.
+        </p>
+        <button id="action-button">Drücken</button>
+      </div>
+      <div id="selected-paragraphs"></div>
+      <div class="stopwatch-section">
+        <h2>ca. 3 Min. für beide Teilnehmer</h2>
+        <div id="countdown">03:00</div>
+        <div class="stopwatch-buttons">
+          <button id="start">Start</button>
+          <button id="stop">Stop</button>
+          <button id="reset">Reset</button>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer-content">
+        <p class="footer-text">© 2024 Prüfung Simulator</p>
+      </div>
+    </footer>
+
+    <script src="dtb-b1-Sprechen-teil-2.js"></script>
+  </body>
+</html>

@@ -1,0 +1,298 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fafeff;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-color: #b56565;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.nav-links {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+
+.nav-links li {
+  display: inline;
+}
+
+.nav-links li:not(:last-child) {
+  margin-right: 20px;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 5px 10px;
+  display: inline-block;
+}
+
+.nav-links li a:hover {
+  background-color: #a14b4b;
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: block;
+  }
+
+  .nav-links li {
+    margin-right: 0;
+  }
+}
+
+footer {
+  background-color: #b56565;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  margin-top: 20px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer-content p {
+  font-size: 14px;
+  margin: 0;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  background-color: #ffffff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+section {
+  margin-bottom: 20px;
+  border-color: #a14b4b;
+  border-style: solid;
+  border-width: 2px;
+  box-shadow: 10px 10px 5px #d69a9a;
+  border-radius: 8px;
+  padding: 25px;
+  background-color: #f5fdff;
+  color: #4b4b4b;
+  font-size: 17px;
+}
+
+.button-section {
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+  display: flex;
+  grid-gap: 0px;
+  background-color: #ffff;
+  padding-bottom: 8px;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.button-section #button-text {
+  font-size: 17px;
+  padding: 1%;
+  color: #b56565;
+  font-weight: 750;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#action-button {
+  background-color: #d69a9a;
+  color: white;
+  border: none;
+  height: 45px;
+  width: 84px;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease;
+  border-color: #a14b4b;
+  border-style: solid;
+  border-width: 1px;
+}
+
+#action-button:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.3);
+  background-color: #a14b4b;
+}
+
+#action-button:active {
+  background-color: rgb(0, 0, 0);
+}
+
+.stopwatch-section {
+  text-align: center;
+  color: #4b4b4b;
+text-shadow: rgba(214, 154, 154, 0.5) 1px 0 10px;
+  font-size: 14px;
+}
+
+#countdown {
+  font-size: 48px;
+  margin-bottom: 20px;
+  color: #4b4b4b;
+}
+
+.stopwatch-buttons button {
+  background-color: #ffe0e0;
+  border-color: #a14b4b;
+  border-style: solid;
+  border-width: 1px;
+  color: #a14b4b;
+  height: 36px;
+  width: 62px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin: 3px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+.stopwatch-buttons button:hover {
+  background-color: #d69a9a;
+  color: white;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.3);
+}
+
+.stopwatch-buttons button:active {
+  background-color: rgb(0, 0, 0);
+}
+
+.title {
+  text-align: center;
+  color: #b56565;
+text-shadow: rgba(214, 154, 154, 0.5) 1px 0 10px;
+  font-size: 28px;
+}
+
+.sub-title {
+  text-align: center;
+  color: #4b4b4b;
+text-shadow: rgba(214, 154, 154, 0.5) 1px 0 10px;
+  font-size: 22px;
+}
+
+h3 {
+  text-align: center;
+  color: #b56565;
+text-shadow: rgba(214, 154, 154, 0.5) 1px 0 10px;
+  font-size: 25px;
+}
+
+h4 {
+  text-align: center;
+  color: #4b4b4b;
+  font-size: 20px;
+text-shadow: rgba(214, 154, 154, 0.5) 1px 0 10px;
+}
+
+#selected-paragraphs {
+  margin-bottom: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  font-weight: bold;
+  font-size: large;
+  color: #4b4b4b;
+}
+
+#selected-paragraphs p {
+  background-color: #f5fdff;
+  padding: 20px;
+  border-right: 5px solid #d69a9a;
+  border-radius: 8px;
+  box-shadow: 10px 0 10px rgba(0, 0, 0.1, 0.1);
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+
+#selected-paragraphs p:hover {
+  box-shadow: #d69a9a;
+  transform: translateY(-5px);
+}
+
+.bullet-point {
+  display: block;
+  margin-left: 10spx;
+  color: #b56565;
+}
+
+.navigation-button-section-page1 {
+  display: flex;
+  justify-content: flex-end;
+  margin: 1.5%;
+}
+
+.navigation-button-section {
+  display: flex;
+  justify-content: space-between;
+  margin: 1.5%;
+}
+
+.arrow-button {
+  position: relative;
+  background: #b56565;
+  color: white;
+  border: none;
+  padding: 10px 30px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: #d69a9a 1px 0 10px;
+}
+
+.arrow-button span {
+  display: block;
+}
+
+.right-arrow::before {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-color: white;
+  clip-path: polygon(100% 50%, 0 0, 0 100%);
+  right: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+#forward-button:hover {
+  background-color: #a14b4b;
+}
+
+#back-button:hover {
+  background-color: #a14b4b;
+}

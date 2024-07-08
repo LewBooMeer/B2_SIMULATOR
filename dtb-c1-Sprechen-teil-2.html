@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BSK C1 Simulator - Page 2</title>
+    <link rel="stylesheet" href="dtb-c1.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Startseite</a></li>
+          <!--<li><a href="#">Contact</a></li>-->
+        </ul>
+      </nav>
+    </header>
+
+    <div class="navigation-button-section">
+      <button
+        id="back-button"
+        class="arrow-button left-arrow"
+        onclick="location.href='dtb-c1-Sprechen-teil-1.html'"
+      >
+        <span>Teil 1</span>
+      </button>
+      <button
+        id="forward-button"
+        class="arrow-button right-arrow"
+        onclick="location.href='dtb-c1-Sprechen-teil-3.html'"
+      >
+        <span>Teil 3</span>
+      </button>
+    </div>
+    <h1 class="title">Deutsch-Test für den Beruf C1</h1>
+    <h2 class="sub-title">Mündliche Prüfung</h2>
+    <div class="container">
+      <h3>Teil 2</h3>
+      <h4>Mit Kolleginnen und Kollegen sprechen (ca. 3 Minuten)</h4>
+
+      <section class="description">
+        Im zweiten Teil der Prüfung werden die Teilnehmenden aufgefordert, ein
+        informelles Gespräch am Arbeitsplatz zu führen. Als Gesprächseinstieg
+        erhält zunächst Teilnehmer/in B eine Frage (1). Teilnehmer/in B beginnt
+        das Gespräch, indem sie bzw. er die Frage vorliest oder in eigenen
+        Worten wiedergibt. Die beiden Teilnehmenden sprechen über das Thema.
+        Danach beginnt Teilnehmer/in A das Gespräch und erhält dafür eine
+        weitere Frage (2).
+      </section>
+
+      <section id="paragraphs" style="display: none">
+        <h1>C1 BSK - Mündliche Prüfung Teil 2</h1>
+        <h2>Section with 25 Paragraphs</h2>
+
+        <p>
+          Wusstest du, dass einige Kollegen jeden Tag bis zu 120 Kilometer zur
+          Arbeit pendeln – also 60 Kilometer pro Strecke?
+        </p>
+        <p>
+          Hast du schon gehört?
+          <br />
+          Ab Mitte der Woche streikt die Post.
+        </p>
+      </section>
+      <div class="button-section">
+        <p id="button-text">
+          Lassen Sie das System eine zufällige Frage auswählen.
+        </p>
+        <button id="action-button">Drücken</button>
+      </div>
+      <div id="selected-paragraphs"></div>
+      <div class="stopwatch-section">
+        <h2>ca. 3 Min. für beide Teilnehmer</h2>
+        <div id="countdown">03:00</div>
+        <div class="stopwatch-buttons">
+          <button id="start">Start</button>
+          <button id="stop">Stop</button>
+          <button id="reset">Reset</button>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer-content">
+        <p class="footer-text">© 2024 Prüfung Simulator</p>
+      </div>
+    </footer>
+
+    <script src="dtb-c1-Sprechen-teil-2.js"></script>
+  </body>
+</html>

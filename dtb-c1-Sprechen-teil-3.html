@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BSK C1 Simulator - Page 3</title>
+    <link rel="stylesheet" href="dtb-c1.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Startseite</a></li>
+          <!--<li><a href="#">Contact</a></li>-->
+        </ul>
+      </nav>
+    </header>
+
+    <div class="navigation-button-section">
+      <button
+        id="back-button"
+        class="arrow-button left-arrow"
+        onclick="location.href='dtb-c1-Sprechen-teil-2.html'"
+      >
+        <span>Teil 2</span>
+      </button>
+      <button
+        id="forward-button"
+        class="arrow-button right-arrow"
+        onclick="location.href='index.html'"
+      >
+        <span>Beenden</span>
+      </button>
+    </div>
+    <h1 class="title">Deutsch-Test für den Beruf C1</h1>
+    <h2 class="sub-title">Mündliche Prüfung</h2>
+    <div class="container">
+      <h3>Teil 3</h3>
+      <h4>Lösungswege diskutieren (ca. 4 Minuten)</h4>
+
+      <section class="description">
+        Im dritten Teil der Prüfung werden die Teilnehmenden aufgefordert, ein
+        arbeitsplatzorientiertes Gespräch zur Lösung eines konkreten Problems zu
+        führen. Sie sollen Lösungen für die gegebene Situation besprechen sowie
+        über langfristige Verbesserungsmöglichkeiten diskutieren. Dabei sollen
+        sie ihre Ideen und Vorschläge einbringen und auf die Vorschläge der
+        Partnerin bzw. des Partners eingehen. Sie sollen klären, was zu tun ist
+        und wer welche Aufgabe übernimmt. Die Stichpunkte auf dem Aufgabenblatt
+        können eine Hilfe sein.
+      </section>
+
+      <section id="paragraphs" style="display: none">
+        <h1>C1 BSK - Mündliche Prüfung Teil 2</h1>
+        <h2>Situation</h2>
+
+        <p>
+          Situation: Es ist besonders heiß. In dem Seniorenheim, in dem Sie
+          arbeiten, heizen sich die Zimmer immer weiter auf. Viele Bewohner
+          leiden unter der Hitze. Die Zimmer haben keine Klimaanlage.
+          <br /><br />
+          Aufgabe: Überlegen Sie zusammen mit Ihrer Gesprächspartnerin oder
+          Ihrem Gesprächspartner, wie Sie in dieser Situation angemessen
+          reagieren.
+          <br /><br />
+          <span class="bullet-point">• Sofortmaßnahmen</span>
+          <span class="bullet-point">• langfristige Maßnahmen</span>
+        </p>
+        <p>
+          Test
+          <br /><br />
+          <span class="bullet-point">• Test</span>
+          <span class="bullet-point">• Test</span>
+          <span class="bullet-point">• Test</span>
+          <span class="bullet-point">• Test</span>
+        </p>
+      </section>
+      <div class="button-section">
+        <p id="button-text">
+          Lassen Sie das System eine zufällige Situation auswählen. Besprechen
+          Sie das Problem mit Ihrem Partner/in und finden Sie eine Lösung.
+        </p>
+        <button id="action-button">Drücken</button>
+      </div>
+      <div id="selected-paragraphs"></div>
+      <div class="stopwatch-section">
+        <h2>ca. 4 Min. für beide Teilnehmer</h2>
+        <div id="countdown">04:00</div>
+        <div class="stopwatch-buttons">
+          <button id="start">Start</button>
+          <button id="stop">Stop</button>
+          <button id="reset">Reset</button>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer-content">
+        <p class="footer-text">© 2024 Prüfung Simulator</p>
+      </div>
+    </footer>
+
+    <script src="dtb-c1-Sprechen-teil-3.js"></script>
+  </body>
+</html>

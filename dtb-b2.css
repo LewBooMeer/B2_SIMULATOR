@@ -7,12 +7,12 @@ body {
 
 /*header start*/
 
-
-
 .header {
   background-color: #008cba;
   padding: 10px;
-  text-align: center; /* Center align the content */
+  text-align: center; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
 }
 
 .nav-links {
@@ -53,7 +53,6 @@ body {
     margin-right: 0; /* Remove margin on smaller screens */
   }
 }
-
 
 /* header end*/
 /*footer*/
@@ -147,6 +146,8 @@ section {
   margin-right: 10px;
 }
 
+/*index buttons*/
+
 /* selecting ACTION button*/
 #action-button {
   background-color: rgb(61, 181, 255);
@@ -168,6 +169,7 @@ section {
 }
 #action-button:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.3);
+
   background-color: rgb(48, 140, 197);
 }
 
@@ -178,7 +180,7 @@ section {
 .stopwatch-section {
   text-align: center;
   color: #4b4b4b;
-  text-shadow: rgb(169, 199, 209) 1px 0 10px;
+text-shadow: rgba(169, 199, 209, 0.5) 1px 0 10px;
   font-size: 14px;
 }
 #countdown {
@@ -198,6 +200,7 @@ section {
   cursor: pointer;
   margin: 3px;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease; /* Added transition */
 }
 .stopwatch-buttons button:hover {
   background-color: rgb(2, 158, 255);
@@ -212,27 +215,27 @@ section {
 .title {
   text-align: center;
   color: #008cba;
-  text-shadow: lightblue 1px 0 10px;
+text-shadow: rgba(173, 216, 230, 0.5) 1px 0 10px;
   font-size: 28px;
 }
 
 .sub-title {
   text-align: center;
   color: #4b4b4b;
-  text-shadow: lightblue 1px 0 10px;
+text-shadow: rgba(173, 216, 230, 0.5) 1px 0 10px;
   font-size: 22px;
 }
 h3 {
   text-align: center;
   color: #008cba;
-  text-shadow: lightblue 1px 0 10px;
+text-shadow: rgba(173, 216, 230, 0.5) 1px 0 10px;
   font-size: 25px;
 }
 h4 {
   text-align: center;
   color: #4b4b4b;
   font-size: 20px;
-  text-shadow: lightblue 1px 0 10px;
+text-shadow: rgba(173, 216, 230, 0.5) 1px 0 10px;
 }
 
 #selected-paragraphs {
